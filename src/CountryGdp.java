@@ -1,10 +1,12 @@
-public class PerCapitaGDP {
+import java.util.ArrayList;
+
+public class CountryGdp {
 
     public String countryName, countryCode;
-    public int year;
-    public double gdp;
+    public ArrayList<Integer> year = new ArrayList<>();
+    public ArrayList<Double> gdp = new ArrayList<>();
 
-    public PerCapitaGDP(String countryName, String countryCode, int year, double gdp) {
+    public CountryGdp(String countryName, String countryCode, ArrayList<Integer> year, ArrayList<Double> gdp) {
         setCountryName(countryName);
         setCountryCode(countryCode);
         setYear(year);
@@ -27,19 +29,19 @@ public class PerCapitaGDP {
         this.countryCode = countryCode;
     }
 
-    public int getYear() {
+    public ArrayList<Integer> getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(ArrayList<Integer> year) {
         this.year = year;
     }
 
-    public double getGdp() {
+    public ArrayList<Double> getGdp() {
         return gdp;
     }
 
-    public void setGdp(double gdp) {
+    public void setGdp(ArrayList<Double> gdp) {
         this.gdp = gdp;
     }
 }
