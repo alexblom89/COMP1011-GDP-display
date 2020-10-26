@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GdpTableViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="35.0">
+         <children>
+            <Label text="Gross Domestic Product Per Country 2000 - 2019" />
+            <TableView id="gdpTable" fx:id="gdpTable" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="countryNameColumn" prefWidth="98.0" text="Country Name" />
+                <TableColumn fx:id="countryCodeColumn" prefWidth="100.0" text="Country Code" />
+                  <TableColumn fx:id="year2000Column" prefWidth="75.0" text="2000" />
+                  <TableColumn fx:id="year2001Column" prefWidth="75.0" text="2001" />
+                  <TableColumn fx:id="year2002Column" prefWidth="75.0" text="2002" />
+                  <TableColumn fx:id="year2003Column" prefWidth="75.0" text="2003" />
+                  <TableColumn fx:id="year2004Column" prefWidth="75.0" text="2004" />
+                  <TableColumn fx:id="year2005Column" prefWidth="75.0" text="2005" />
+                  <TableColumn fx:id="year2006Column" prefWidth="75.0" text="2006" />
+                  <TableColumn fx:id="year2007Column" prefWidth="75.0" text="2007" />
+                  <TableColumn fx:id="year2008Column" prefWidth="75.0" text="2008" />
+                  <TableColumn fx:id="year2009Column" prefWidth="75.0" text="2009" />
+                  <TableColumn fx:id="year2010Column" prefWidth="75.0" text="2010" />
+                  <TableColumn fx:id="year2011Column" prefWidth="75.0" text="2011" />
+                  <TableColumn fx:id="year2012Column" prefWidth="75.0" text="2012" />
+                  <TableColumn fx:id="year2013Column" prefWidth="75.0" text="2013" />
+                  <TableColumn fx:id="year2014Column" prefWidth="75.0" text="2014" />
+                  <TableColumn fx:id="year2015Column" prefWidth="75.0" text="2015" />
+                  <TableColumn fx:id="year2016Column" prefWidth="75.0" text="2016" />
+                  <TableColumn fx:id="year2017Column" prefWidth="75.0" text="2017" />
+                  <TableColumn fx:id="year2018Column" prefWidth="75.0" text="2018" />
+                  <TableColumn fx:id="year2019Column" prefWidth="75.0" text="2019" />
+              </columns>
+            </TableView>
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
