@@ -86,6 +86,11 @@ public class GdpTableViewController implements Initializable {
     @FXML
     private TableColumn<CountryGdp, Float> year2019Column;
 
+    /**
+     * Set up the table to accept values from the CountryGDP constructor.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         countryNameColumn.setCellValueFactory(new PropertyValueFactory<CountryGdp, String>("countryName"));
@@ -118,6 +123,11 @@ public class GdpTableViewController implements Initializable {
         }
     }
 
+    /**
+     * Use the SceneChanger Utility to go back to the chart view.
+     * @param event
+     * @throws IOException
+     */
     @FXML private void backToChartView(ActionEvent event) throws IOException {
         SceneChanger.changeScene(event, "/Views/GdpChartView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
     }

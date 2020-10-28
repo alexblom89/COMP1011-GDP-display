@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
+    //Icon made by Freepik from www.flaticon.com
     Image icon = new Image("icons/money.png");
 
     public static void main(String[] args) throws IOException {

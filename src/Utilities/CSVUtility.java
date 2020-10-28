@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVUtility {
+    /**
+     * This method takes a .csv file (specified in Files.readAllLines(Paths.get()) and converts the values into
+     * SQL insert statements. These statements are then written to a new file placed in the SqlFileOutput Directory.
+     * This method was adapted from the following thread: https://stackoverflow.com/questions/36744451/generate-insert-sql-statement-from-a-csv-file
+     * @throws IOException
+     */
     public static void convertCSVToSQL() throws IOException {
         String delimiter = ";";
 

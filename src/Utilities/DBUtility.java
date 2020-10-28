@@ -11,7 +11,6 @@ public class DBUtility {
 
     public static ArrayList<CountryGdp> getCountryGdp() throws SQLException {
         ArrayList<CountryGdp> countryGdps = new ArrayList<>();
-//        ArrayList<Float> yearlyGdp = new ArrayList<>();
         Connection conn = null;
         Statement statement = null;
         ResultSet rs = null;

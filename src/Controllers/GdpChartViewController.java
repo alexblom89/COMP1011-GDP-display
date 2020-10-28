@@ -34,6 +34,13 @@ public class GdpChartViewController implements Initializable {
 
     private ArrayList<CountryGdp> gdpData = new ArrayList<>();
 
+    /**
+     * Set various items in the scene, put all data from the database into an arraylist, loop through data and put all country names
+     * into the combo box. Pre-select Canada in the combobox and load chart. (If no country is selected, on startup the
+     * application's linechart x-axis labels act strangely).
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
@@ -59,6 +66,10 @@ public class GdpChartViewController implements Initializable {
         }
     }
 
+    /**
+     * Clear the previous country's chart, and load the new chart from the data retrieved based on the country that has
+     * been selected with the combo box.
+     */
     @FXML private void selectChart() {
         XYChart.Series<String, Float> gdpSeries = new XYChart.Series<>();
 
@@ -92,6 +103,11 @@ public class GdpChartViewController implements Initializable {
         }
     }
 
+    /**
+     * Use SceneChanger Utility to go to the Table View.
+     * @param event
+     * @throws IOException
+     */
     @FXML private void goToTableView(ActionEvent event) throws IOException {
         SceneChanger.changeScene(event, "/Views/GdpTableView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
     }
