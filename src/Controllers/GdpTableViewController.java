@@ -1,3 +1,8 @@
+package Controllers;
+
+import Models.CountryGdp;
+import Utilities.DBUtility;
+import Utilities.SceneChanger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -114,6 +119,6 @@ public class GdpTableViewController implements Initializable {
     }
 
     @FXML private void backToChartView(ActionEvent event) throws IOException {
-        SceneChanger.changeScene(event, "GdpChartView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
+        SceneChanger.changeScene(event, "/Views/GdpChartView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
     }
 }

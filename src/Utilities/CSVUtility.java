@@ -1,3 +1,5 @@
+package Utilities;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -10,7 +12,7 @@ public class CSVUtility {
 
         List<String> statements = new ArrayList<>();
 
-        List<String> lines = Files.readAllLines(Paths.get("GDPPerCapita/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1495171.csv"));
+        List<String> lines = Files.readAllLines(Paths.get("CSVFiles/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_1495171.csv"));
 
         for (int i = 1; i < lines.size(); i++) {
             String[] rawValues = lines.get(i).split(delimiter, -1);

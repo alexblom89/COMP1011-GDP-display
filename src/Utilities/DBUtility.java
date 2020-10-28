@@ -1,9 +1,13 @@
+package Utilities;
+
+import Models.CountryGdp;
+
 import java.sql.*;
 import java.util.ArrayList;
 
 public class DBUtility {
-    private static String user = "root";
-    private static String password = "trains";
+    private static String user = "student";
+    private static String password = "student";
 
     public static ArrayList<CountryGdp> getCountryGdp() throws SQLException {
         ArrayList<CountryGdp> countryGdps = new ArrayList<>();
@@ -21,7 +25,7 @@ public class DBUtility {
             {
                 //This is my attempt at automating the process of getting each column value for each year and placing them into an arraylist object.
 //                while (counter < 66){
-//                    CountryGdp newCountryGdp = new CountryGdp(
+//                    Models.CountryGdp newCountryGdp = new Models.CountryGdp(
 //                            rs.getInt("gdpId"),
 //                            rs.getString("countryName"),
 //                            rs.getString("countryCode"),

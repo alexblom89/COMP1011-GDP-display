@@ -1,0 +1,59 @@
+#chartAnchorPane {
+    -fx-background-color: #757575;
+    -fx-border-style: solid;
+    -fx-border-color: #212121;
+    -fx-border-width: 5px;
+}
+
+#countryComboBox {
+    -fx-font-size: 14;
+    -fx-border-color: #512DA8;
+    -fx-border-radius: 10px;
+    -fx-background-color: #D1C4E9;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 0 0 1 0;
+    -fx-text-alignment: CENTER;
+    -fx-text-fill: #212121;
+}
+
+#countryComboBox:hover {
+    -fx-background-color: #beaae3;
+}
+
+#gdpLineChart {
+    -fx-font-size: 12;
+}
+
+#tableViewButton {
+    -fx-font-size: 14;
+    -fx-border-color: #512DA8;
+    -fx-text-fill: #212121;
+    -fx-background-color: #D1C4E9;
+    -fx-background-radius: 16px;
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-radius: 15px;
+    -fx-border-width: 3px;
+}
+
+#tableViewButton:hover {
+    -fx-background-color: #beaae3;
+}
+
+.chart-title {
+    -fx-text-fill: #FFFFFF;
+}
+
+.chart-content {
+    -fx-text-fill: #FFFFFF;
+}
+
+.axis {
+    -fx-font-size: 8;
+    -fx-tick-label-fill: #FFFFFF;
+}
+
+.axis-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13;
+}
+

@@ -1,4 +1,8 @@
-import javafx.collections.FXCollections;
+package Controllers;
+
+import Models.CountryGdp;
+import Utilities.DBUtility;
+import Utilities.SceneChanger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -35,6 +39,7 @@ public class GdpChartViewController implements Initializable {
         try {
                 gdpData.addAll(DBUtility.getCountryGdp());
                 XYChart.Series<String, Float> gdpSeries = new XYChart.Series<>();
+                gdpLineChart.setLegendVisible(false);
 
                 gdpSeries.setName("GDP Per Capita (US$)");
                 yearAxis.setLabel("Year");
@@ -88,6 +93,6 @@ public class GdpChartViewController implements Initializable {
     }
 
     @FXML private void goToTableView(ActionEvent event) throws IOException {
-        SceneChanger.changeScene(event, "GdpTableView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
+        SceneChanger.changeScene(event, "/Views/GdpTableView.fxml", "Per Capita Gross Domestic Product Per Country 2000 - 2019");
     }
 }
